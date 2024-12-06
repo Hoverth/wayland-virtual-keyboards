@@ -15,6 +15,8 @@ requirements for both protocol + compositor-side and application-side
 developers (application-side devs here being the ones working on OSKs on
 Wayland), and finally some examples of those keyboards (mainly Wayland, some X).
 
+## Table of Contents
+
 <!-- vim-markdown-toc GFM -->
 
 - [Mobile Keyboards](#mobile-keyboards)
