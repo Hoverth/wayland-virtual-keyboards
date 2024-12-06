@@ -97,8 +97,8 @@ I find that desktop OSKs are more useful when the input method is a mouse.
 of screen estate, such as on a touchscreen TVs or projector systems
 - Navigating programs using non-text input, e.g. special keys, keybinds
   - Desktop Environments / Compositors
-  - Terminal
-  - Spreadsheet Program
+  - Terminal (to send SIG events, e.g. `Ctrl+C`)
+  - Spreadsheet Program (More advanced text editing, home/end keys, etc)
   - Games (using something like the arrow keys)
 - Using the OSK as a GUI keyboard macro pad
 
