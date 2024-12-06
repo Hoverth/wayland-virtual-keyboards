@@ -56,6 +56,7 @@ like [input-method-unstable-v1.xml](https://wayland.app/protocols/input-method-u
 - Displays on the lower half of the screen
 - Ability to switch layers to access numbers & symbols
 - Spell-checking (Optional)
+- Mobile keyboards usually appear only when a text input is selected
 
 ### Mobile OSK Examples
 
@@ -84,6 +85,8 @@ see [the Xkbcommon docs](https://xkbcommon.org/doc/current/xkbcommon-keysyms_8h.
 - Ability to float
 - Ability to emulate a full hardware keyboard (including modifier keys)
 - Ability to change the window's opacity
+- Ability to be shown even when there isn't a text input active
+(i.e. an always shown setting)
 
 ### Desktop OSK Examples
 
