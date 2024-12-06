@@ -37,6 +37,7 @@ Wayland), and finally some examples of those keyboards (mainly Wayland, some X).
   - [OSKs](#osks)
   - [Other Tips](#other-tips)
 - [Contributing](#contributing)
+  - [Contributing Guidelines](#contributing-guidelines)
 - [License](#license)
 - [Authors](#authors)
 
@@ -153,6 +154,12 @@ Got some resources to add or tips other developers should know? Open an issue
 or a pull request and it can be added!
 
 By contributing, you agree to license your contribution under the license.
+
+### Contributing Guidelines
+
+- As this is an accessibility project (as OSKs are accessibility tools), any
+and all use-cases for an OSK should be seen as valid methods that should be
+accounted for and supported to some degree.
 
 ## License
 
