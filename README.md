@@ -15,6 +15,26 @@ requirements for both protocol + compositor-side and application-side
 developers (application-side devs here being the ones working on OSKs on
 Wayland), and finally some examples of those keyboards (mainly Wayland, some X).
 
+<!-- vim-markdown-toc GFM -->
+
+- [Mobile Keyboards](#mobile-keyboards)
+  - [Mobile OSK Implementation Details](#mobile-osk-implementation-details)
+  - [Mobile OSK Requirements](#mobile-osk-requirements)
+  - [Mobile OSK Examples](#mobile-osk-examples)
+- [Desktop Keyboards](#desktop-keyboards)
+  - [Desktop OSK Implementation Details](#desktop-osk-implementation-details)
+  - [Desktop OSK Requirements](#desktop-osk-requirements)
+  - [Desktop OSK Examples](#desktop-osk-examples)
+- [Resources](#resources)
+  - [Wayland Protocols](#wayland-protocols)
+  - [OSKs](#osks)
+  - [Other Tips](#other-tips)
+- [Contributing](#contributing)
+- [License](#license)
+- [Authors](#authors)
+
+<!-- vim-markdown-toc -->
+
 ## Mobile Keyboards
 
 Mobile keyboards are typically used to input text in an efficient and
