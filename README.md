@@ -6,8 +6,10 @@ interface, instead of a physical keyboard.
 
 Broadly speaking, OSKs can be split into two categories:
 
-- Mobile keyboards, more focussed on text input.
-- Desktop keyboards, more focussed on controlling a computer.
+- Mobile keyboards, more focussed on simple text input, like what would be found
+on Android or iOS as default.
+- Desktop keyboards, more focussed on controlling a computer to it's
+fullest extent, including use of modifier keys and keybinds.
 
 In this document I'll outline what each are typically used for, some notes
 on what Wayland currently has in place for implementations, some
@@ -20,10 +22,12 @@ Wayland), and finally some examples of those keyboards (mainly Wayland, some X).
 <!-- vim-markdown-toc GFM -->
 
 - [Mobile Keyboards](#mobile-keyboards)
+  - [Mobile OSK Use-cases](#mobile-osk-use-cases)
   - [Mobile OSK Implementation Details](#mobile-osk-implementation-details)
   - [Mobile OSK Requirements](#mobile-osk-requirements)
   - [Mobile OSK Examples](#mobile-osk-examples)
 - [Desktop Keyboards](#desktop-keyboards)
+  - [Desktop OSK Use-cases](#desktop-osk-use-cases)
   - [Desktop OSK Implementation Details](#desktop-osk-implementation-details)
   - [Desktop OSK Requirements](#desktop-osk-requirements)
   - [Desktop OSK Examples](#desktop-osk-examples)
@@ -46,6 +50,16 @@ more frequently are found on touchscreen devices.
 Android and iOS keyboards are what I would consider to be the gold
 standard, and we should probably seek to reproduce how they work.
 
+Note that I don't include something like
+[Hacker's Keyboard](https://github.com/klausw/hackerskeyboard), as that
+contains more specialised keyboard features, such as modifier keys.
+
+### Mobile OSK Use-cases
+
+- Texting / messaging
+- Simple note writing
+- Dialling a phone number
+
 ### Mobile OSK Implementation Details
 
 - You will want to look into preediting/commiting strings using a protocol
@@ -67,12 +81,21 @@ like [input-method-unstable-v1.xml](https://wayland.app/protocols/input-method-u
 
 Desktop keyboards are typically used to emulate a full keyboard,
 including usually having a GUI that shows a keyboard layout, complete
-with modifier keys and levels.
+with special keys, modifier keys and levels.
 
 They are usually less focussed on text-specific input, and allow the user
 to input keybinds and other specialised input to control their computer.
 
 I find that desktop OSKs are more useful when the input method is a mouse.
+
+### Desktop OSK Use-cases
+
+- Navigating programs using non-text input, e.g. special keys, keybinds
+  - Desktop Environments / Compositors
+  - Terminal
+  - Spreadsheet Program
+  - Games (using something like the arrow keys)
+- Using the OSK as a GUI keyboard macro pad
 
 ### Desktop OSK Implementation Details
 
