@@ -6,10 +6,11 @@ interface, instead of a physical keyboard.
 
 Broadly speaking, OSKs can be split into two categories:
 
-- Mobile keyboards, more focussed on simple text input, like what would be found
-on Android or iOS as default.
-- Desktop keyboards, more focussed on controlling a computer to it's
-fullest extent, including use of modifier keys and keybinds.
+- Mobile keyboards, primarily for portrait screens, more focussed on
+simple text input, like what would be found on Android or iOS as default.
+- Desktop keyboards, primarily for landscape screens or larger screens,
+more focussed on controlling a computer to it's fullest extent, including
+use of modifier keys and keybinds.
 
 In this document I'll outline what each are typically used for, some notes
 on what Wayland currently has in place for implementations, some
@@ -45,7 +46,8 @@ Wayland), and finally some examples of those keyboards (mainly Wayland, some X).
 
 Mobile keyboards are typically used to input text in an efficient and
 user-friendly manner, with less concern on more specialised input. They
-more frequently are found on touchscreen devices.
+more frequently are found on touchscreen devices, especially ones with
+portrait modes.
 
 Android and iOS keyboards are what I would consider to be the gold
 standard, and we should probably seek to reproduce how they work.
@@ -90,6 +92,8 @@ I find that desktop OSKs are more useful when the input method is a mouse.
 
 ### Desktop OSK Use-cases
 
+- For use on screens where the keyboard should not take up large amounts
+of screen estate, such as on a touchscreen TVs or projector systems
 - Navigating programs using non-text input, e.g. special keys, keybinds
   - Desktop Environments / Compositors
   - Terminal
