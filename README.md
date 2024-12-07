@@ -12,6 +12,10 @@ simple text input, like what would be found on Android or iOS as default.
 more focussed on controlling a computer to it's fullest extent, including
 use of modifier keys and keybinds.
 
+Note that these categories are flexible, and just mainly serve as an example
+of categorisation of OSKs. Others that could exist are simple/advanced and 
+touchscreen/mouse, as examples.
+
 In this document I'll outline what each are typically used for, some notes
 on what Wayland currently has in place for implementations, some
 requirements for both protocol + compositor-side and application-side
@@ -22,6 +26,7 @@ Wayland), and finally some examples of those keyboards (mainly Wayland, some X).
 
 <!-- vim-markdown-toc GFM -->
 
+- [Common Misconceptions](#common-misconceptions)
 - [Mobile Keyboards](#mobile-keyboards)
   - [Mobile OSK Use-cases](#mobile-osk-use-cases)
   - [Mobile OSK Implementation Details](#mobile-osk-implementation-details)
@@ -42,6 +47,16 @@ Wayland), and finally some examples of those keyboards (mainly Wayland, some X).
 - [Authors](#authors)
 
 <!-- vim-markdown-toc -->
+
+## Common Misconceptions
+
+- OSKs aren't just primarily for touchscreens, they should be able to be used
+effectively with mice and other pointer methods as well. This means that some
+aspects of an OSK's design need to be examined from multiple angles, such as
+the amount of screen estate that the OSK takes up, as touchscreen OSKs should
+take up enough for the fingers of user to be able to accurately use the OSK,
+but mouse users have typically higher precision, so they may prefer a smaller
+amount of screen estate to be taken up
 
 ## Mobile Keyboards
 
@@ -115,6 +130,9 @@ see [the Xkbcommon docs](https://xkbcommon.org/doc/current/xkbcommon-keysyms_8h.
 - Ability to change the window's opacity
 - Ability to be shown even when there isn't a text input active
 (i.e. an always shown setting)
+- Support for differing key sizes (touchscreen users need bigger keys,
+whereas mice users need smaller keys so they can still see most of the
+screen)
 
 ### Desktop OSK Examples
 
